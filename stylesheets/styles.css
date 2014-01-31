@@ -1,0 +1,202 @@
+/* line 17, ../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 4, ../sass/styles.css.sass */
+* {
+  box-sizing: border-box;
+}
+
+/* line 6, ../sass/styles.css.sass */
+.clear {
+  clear: both;
+}
+
+/* line 8, ../sass/styles.css.sass */
+body {
+  color: #444444;
+  border-top: 3px solid #444444;
+  background-color: #e4e6e5;
+}
+/* line 12, ../sass/styles.css.sass */
+body header {
+  background: url(../images/stitch_hr.png) left top repeat-x, url(../images/bg_dark.png) repeat left 2px, #343434;
+  height: 3em;
+  color: #dddddd;
+  border-color: black;
+  background-color: #2d2d2d;
+  -webkit-box-shadow: 5px 2px 5px #333333;
+  -moz-box-shadow: 5px 2px 5px #333333;
+  box-shadow: 5px 2px 5px #333333;
+}
+/* line 19, ../sass/styles.css.sass */
+body header h1 {
+  background: url("../images/cloud.png") right top no-repeat;
+  color: white;
+  margin: 0.5em 0 0 0;
+  padding: 0 0 0.5em 0;
+  font-family: "Helvetica, Arial, sans-serif";
+  font-size: 150%;
+  font-weight: 800;
+}
+/* line 27, ../sass/styles.css.sass */
+body header ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 60, ../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+body header ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+/* line 48, ../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+body header ul li:first-child, body header ul li.first {
+  padding-left: 0;
+}
+/* line 49, ../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+body header ul li:last-child {
+  padding-right: 0;
+}
+/* line 50, ../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+body header ul li.last {
+  padding-right: 0;
+}
+/* line 29, ../sass/styles.css.sass */
+body header ul li {
+  text-align: right;
+  height: 3em;
+  margin: 1.1em 0 0 0;
+}
+/* line 34, ../sass/styles.css.sass */
+body .container #wrapper {
+  margin: 2em 0;
+}
+/* line 39, ../sass/styles.css.sass */
+body .container #wrapper #slider #slider_1 ul li .notesite {
+  margin: 0 auto;
+}
+/* line 42, ../sass/styles.css.sass */
+body .container #wrapper #slider div p {
+  text-align: center;
+}
+/* line 44, ../sass/styles.css.sass */
+body .container #wrapper #slider div p span {
+  width: 3em;
+  height: 3em;
+}
+
+/* line 48, ../sass/styles.css.sass */
+div.open {
+  height: auto !important;
+}
+
+/* line 50, ../sass/styles.css.sass */
+div#resume {
+  height: 0;
+  display: block;
+  overflow: hidden;
+}
+/* line 54, ../sass/styles.css.sass */
+div#resume section {
+  display: block;
+}
+
+/* line 58, ../sass/styles.css.sass */
+section#instances h1 {
+  width: 100%;
+  font-size: 130%;
+  font-family: "Helvetica, Arial, sans-serif";
+  color: #444444;
+  border-bottom: 2px solid #ebe54d;
+  padding: 0.2em 0 0.2em 0.5em;
+}
+
+/* line 66, ../sass/styles.css.sass */
+section#disks h1 {
+  width: 100%;
+  font-size: 130%;
+  font-family: "Helvetica, Arial, sans-serif";
+  color: #444444;
+  border-bottom: 2px solid #e9a392;
+  padding: 0.2em 0 0.2em 0.5em;
+}
+
+/* line 74, ../sass/styles.css.sass */
+section#memories h1 {
+  width: 100%;
+  font-size: 130%;
+  font-family: "Helvetica, Arial, sans-serif";
+  color: #444444;
+  border-bottom: 2px solid #6fc2ce;
+  padding: 0.2em 0 0.2em 0.5em;
+}

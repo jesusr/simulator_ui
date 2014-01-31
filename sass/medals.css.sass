@@ -1,0 +1,134 @@
+@import url(http://fonts.googleapis.com/css?family=Text+Me+One)
+@import url(http://fonts.googleapis.com/css?family=Oxygen:300)
+@import compass/css3/border-radius
+@import compass/css3/text-shadow
+$border-color-one: #ecd06f
+$border-color-two: #df6c4f
+$border-color-three: #1a99aa
+$font-family-helvetica: Helvetica, Arial, Verdana, sans-serif
+$font-family-textme: 'Text Me One', sans-serif
+$font-family-oxygen: 'Oxygen', sans-serif
+ul li.instances, ul li.disk, ul li.memory 
+	margin: 1em
+	float: left
+	list-style: none
+.notesite 
+	position: relative
+	width: 1em
+	height: 1em
+	font-size: 1140%
+	cursor: pointer
+	&:after
+		+border-radius(.5em)
+		content: ''
+		display: block
+		position: absolute
+		top: .1em
+		left: .1em
+		width: .8em
+		height: .8em
+		background: #e4e6e5
+		z-index: 1
+	&:before
+		+border-radius(.5em)
+		content: ''
+		display: block
+		position: absolute
+		width: 1em
+		height: 1em
+		opacity: .5
+		z-index: 0
+	&>.percent
+		position: absolute
+		top: 1.2em
+		width: 100%
+		font-size: 5%
+		text-align: center
+		z-index: 2
+		font-size: 18%
+		font-family: $font-family-helvetica
+		color: #333
+		span
+			+border-radius(.5em)
+			+text-shadow(0 0 .2em #888)
+			font-family: $font-family-oxygen
+			display: inline-block
+			line-height: .85em
+			text-align: center
+			font-size: .8em
+		.int
+			font-size: 180%
+			font-weight: bold
+		.dec
+			font-size: 100%
+		.leyend 
+			font-size: 80%
+			font-weight: ligth
+			max-width: 4.5em
+	&>#slice
+		position: absolute
+		width: 1em
+		height: 1em
+		clip: rect(0px,1em,.5em,.5em)
+		&>.pie
+			box-sizing: content-box
+			+border-radius(.5em)
+			position: absolute
+			border: .51em solid #444
+			width: .9em
+			height: .9em
+			clip: rect(0em,1em,1em,0em)
+		.fill
+			-moz-transform: rotate(360deg)!important
+			-webkit-transform: rotate(360deg)!important
+			-o-transform: rotate(360deg)!important
+			transform: rotate(360deg)!important
+			box-shadow: 5em 5em 5em .2em #888
+li.design .notesite>#slice>.pie 
+	border-color: #df6c4f
+#slice>.pie 
+	position: absolute
+	border: .1em solid #444
+	width: .8em
+	height: .8em
+	clip: rect(0em,0.5em,1em,0em)
+	-moz-border-radius: .5em
+	-webkit-border-radius: .5em
+	border-radius: .5em
+#slice .gt50 
+	clip: rect(auto,auto,auto,auto)
+	background: #df6c4f
+svg
+	padding: 1em 1em 1em 5em
+	g
+		text
+			color: green
+.scont
+	height: 200px
+	width: 100%
+.tcont
+	font-size: 250%
+li.instances .notesite>#slice>.pie
+	border-color: $border-color-one
+	box-shadow: 1px 1px 1px #444
+li.disk .notesite>#slice>.pie 
+	border-color: $border-color-two
+	box-shadow: 1px 1px 1px #444
+li.memory .notesite>#slice>.pie 
+	border-color: $border-color-three
+	box-shadow: 1px 1px 1px #444
+li.instances .notesite:before
+	background: $border-color-one
+	box-shadow: 1px 1px 1px #444
+li.disk .notesite:before
+	background: $border-color-two
+	box-shadow: 1px 1px 1px #444
+li.memory .notesite:before
+	background: $border-color-three
+	box-shadow: 1px 1px 1px #444
+li.disk .percent .int
+	width: 100%
+li.instances .percent .int
+	width: 100%	
+li.memory .percent .int
+	width: 100%	

@@ -1,0 +1,80 @@
+@import "compass/reset"
+@import "compass"
+$fontFamily: 'Helvetica, Arial, sans-serif'
+*
+	box-sizing: border-box
+.clear 
+	clear: both	
+body
+	color: #444
+	border-top: 3px solid #444
+	background-color: #e4e6e5
+	header
+		background: url(../images/stitch_hr.png) left top repeat-x, url(../images/bg_dark.png) repeat left 2px, #343434
+		height: 3em
+		color: #ddd
+		border-color: #000
+		background-color: #2d2d2d
+		+box-shadow(5px 2px 5px #333)
+		h1
+			background: url('../images/cloud.png') right top no-repeat
+			color: #FFF
+			margin: .5em 0 0 0
+			padding: 0 0 .5em 0
+			font-family: $fontFamily
+			font-size: 150%
+			font-weight: 800
+		ul
+			+horizontal-list
+			li
+				text-align: right
+				height: 3em
+				margin: 1.1em 0 0 0 
+	.container	
+		#wrapper
+			margin: 2em 0
+			#slider
+				#slider_1
+					ul li
+						.notesite
+							margin: 0 auto
+				div	
+					p
+						text-align: center
+						span
+							width: 3em
+							height: 3em
+hr
+div.open
+	height: auto !important
+div#resume
+	height: 0
+	display: block
+	overflow: hidden	
+	section
+		display: block
+		h1
+section#instances
+	h1
+		width: 100%
+		font-size: 130%
+		font-family: $fontFamily
+		color: #444
+		border-bottom: 2px solid #EBE54D
+		padding: .2em 0 .2em .5em
+section#disks
+	h1
+		width: 100%
+		font-size: 130%
+		font-family: $fontFamily
+		color: #444
+		border-bottom: 2px solid #E9A392
+		padding: .2em 0 .2em .5em
+section#memories
+	h1
+		width: 100%
+		font-size: 130%
+		font-family: $fontFamily
+		color: #444
+		border-bottom: 2px solid #6FC2CE
+		padding: .2em 0 .2em .5em

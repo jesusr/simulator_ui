@@ -1,0 +1,213 @@
+@import url(http://fonts.googleapis.com/css?family=Text+Me+One);
+@import url(http://fonts.googleapis.com/css?family=Oxygen:300);
+/* line 11, ../sass/medals.css.sass */
+ul li.instances, ul li.disk, ul li.memory {
+  margin: 1em;
+  float: left;
+  list-style: none;
+}
+
+/* line 15, ../sass/medals.css.sass */
+.notesite {
+  position: relative;
+  width: 1em;
+  height: 1em;
+  font-size: 1140%;
+  cursor: pointer;
+}
+/* line 21, ../sass/medals.css.sass */
+.notesite:after {
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+  border-radius: 0.5em;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0.1em;
+  left: 0.1em;
+  width: 0.8em;
+  height: 0.8em;
+  background: #e4e6e5;
+  z-index: 1;
+}
+/* line 32, ../sass/medals.css.sass */
+.notesite:before {
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+  border-radius: 0.5em;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  opacity: 0.5;
+  z-index: 0;
+}
+/* line 41, ../sass/medals.css.sass */
+.notesite > .percent {
+  position: absolute;
+  top: 1.2em;
+  width: 100%;
+  font-size: 5%;
+  text-align: center;
+  z-index: 2;
+  font-size: 18%;
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+  color: #333333;
+}
+/* line 51, ../sass/medals.css.sass */
+.notesite > .percent span {
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+  border-radius: 0.5em;
+  text-shadow: 0 0 0.2em #888888;
+  font-family: "Oxygen", sans-serif;
+  display: inline-block;
+  line-height: 0.85em;
+  text-align: center;
+  font-size: 0.8em;
+}
+/* line 59, ../sass/medals.css.sass */
+.notesite > .percent .int {
+  font-size: 180%;
+  font-weight: bold;
+}
+/* line 62, ../sass/medals.css.sass */
+.notesite > .percent .dec {
+  font-size: 100%;
+}
+/* line 64, ../sass/medals.css.sass */
+.notesite > .percent .leyend {
+  font-size: 80%;
+  font-weight: ligth;
+  max-width: 4.5em;
+}
+/* line 68, ../sass/medals.css.sass */
+.notesite > #slice {
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  clip: rect(0px, 1em, 0.5em, 0.5em);
+}
+/* line 73, ../sass/medals.css.sass */
+.notesite > #slice > .pie {
+  box-sizing: content-box;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+  border-radius: 0.5em;
+  position: absolute;
+  border: 0.51em solid #444444;
+  width: 0.9em;
+  height: 0.9em;
+  clip: rect(0em, 1em, 1em, 0em);
+}
+/* line 81, ../sass/medals.css.sass */
+.notesite > #slice .fill {
+  -moz-transform: rotate(360deg) !important;
+  -webkit-transform: rotate(360deg) !important;
+  -o-transform: rotate(360deg) !important;
+  transform: rotate(360deg) !important;
+  box-shadow: 5em 5em 5em 0.2em #888888;
+}
+
+/* line 87, ../sass/medals.css.sass */
+li.design .notesite > #slice > .pie {
+  border-color: #df6c4f;
+}
+
+/* line 89, ../sass/medals.css.sass */
+#slice > .pie {
+  position: absolute;
+  border: 0.1em solid #444444;
+  width: 0.8em;
+  height: 0.8em;
+  clip: rect(0em, 0.5em, 1em, 0em);
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+}
+
+/* line 98, ../sass/medals.css.sass */
+#slice .gt50 {
+  clip: rect(auto, auto, auto, auto);
+  background: #df6c4f;
+}
+
+/* line 101, ../sass/medals.css.sass */
+svg {
+  padding: 1em 1em 1em 5em;
+}
+/* line 104, ../sass/medals.css.sass */
+svg g text {
+  color: green;
+}
+
+/* line 106, ../sass/medals.css.sass */
+.scont {
+  height: 200px;
+  width: 100%;
+}
+
+/* line 109, ../sass/medals.css.sass */
+.tcont {
+  font-size: 250%;
+}
+
+/* line 111, ../sass/medals.css.sass */
+li.instances .notesite > #slice > .pie {
+  border-color: #ecd06f;
+  box-shadow: 1px 1px 1px #444444;
+}
+
+/* line 114, ../sass/medals.css.sass */
+li.disk .notesite > #slice > .pie {
+  border-color: #df6c4f;
+  box-shadow: 1px 1px 1px #444444;
+}
+
+/* line 117, ../sass/medals.css.sass */
+li.memory .notesite > #slice > .pie {
+  border-color: #1a99aa;
+  box-shadow: 1px 1px 1px #444444;
+}
+
+/* line 120, ../sass/medals.css.sass */
+li.instances .notesite:before {
+  background: #ecd06f;
+  box-shadow: 1px 1px 1px #444444;
+}
+
+/* line 123, ../sass/medals.css.sass */
+li.disk .notesite:before {
+  background: #df6c4f;
+  box-shadow: 1px 1px 1px #444444;
+}
+
+/* line 126, ../sass/medals.css.sass */
+li.memory .notesite:before {
+  background: #1a99aa;
+  box-shadow: 1px 1px 1px #444444;
+}
+
+/* line 129, ../sass/medals.css.sass */
+li.disk .percent .int {
+  width: 100%;
+}
+
+/* line 131, ../sass/medals.css.sass */
+li.instances .percent .int {
+  width: 100%;
+}
+
+/* line 133, ../sass/medals.css.sass */
+li.memory .percent .int {
+  width: 100%;
+}

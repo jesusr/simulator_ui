@@ -1,0 +1,19 @@
+  flavours = {
+    "node_type":"flavours",
+    "flavours":[
+      {
+        "id":"1",
+        "name":"tiny",
+        "memory": "512MB",
+        "disk": "0",
+        "vcpu": "1"
+      },
+      {
+        "id":"5",
+        "name":"xlarge",
+        "memory":"2GB",
+        "disk":"5TB",
+        "vcpu":"12"
+      },
+    ]
+  }
